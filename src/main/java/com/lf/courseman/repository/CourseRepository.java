@@ -8,6 +8,6 @@ import java.util.UUID;
 @Repository("courseRepository")
 public interface CourseRepository extends IRepository<Course, UUID> {
 
-//    @Query("SELECT e FROM Expense e WHERE e.amount >= :amount")
-//    public List<Expense> listItemsWithPriceOver(@Param("amount") float amount);
+//    @Query("SELECT c FROM Course c WHERE c.name like %:name%")
+//    public List<Course> listCoursesWithName(@Param("name") String name);
 }
